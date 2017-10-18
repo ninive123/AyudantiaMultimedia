@@ -16,6 +16,7 @@
 
 	<script>
 		function ejecutarAjax(universidad) {
+			$.ajax({
 				url: 'procesar.php',
 				method: "GET",
 				data: {param1: 'value1', param2: universidad},
